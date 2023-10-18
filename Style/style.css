@@ -34,6 +34,11 @@ nav ul {
 nav ul li {
     display: inline;
     margin: 0 20px;
+    transition: font-size 0.2s;
+}
+
+nav ul li:hover {
+    font-size: 1.7em; /* Increase the font size on hover */
 }
 
 nav a {
@@ -48,16 +53,27 @@ section {
 }
 
 .about-content {
-    background: #d2fffd;
-    padding: 20px;
+    background-size: cover;
+    background-color: rgb(127, 232, 255);
+    padding: 90px;
     border-radius: 10px;
-    margin-top: 90px; /* Add margin at the top of about-content */
-    margin-bottom: 20px; 
+    margin-top: 90px;
+    margin-bottom: 20px;
 }
-.about-content p{
-    font-size: large;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+#about {
+    background-size: cover; /* This property scales the image to cover the entire section */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Fixed background to avoid scrolling */
+    background-position: center center; /* Center the background image */
+    padding: 62px; /* You can adjust the padding as needed */
 }
+
+.about-content p {
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 
 /* Skills Section */
 #skills {
@@ -136,13 +152,52 @@ section {
 .links a {
     display: inline-block;
     margin: 10px;
+    transition: transform 0.2s;
+}
+
+.links a:hover {
+    transform: scale(1.2);
 }
 
 .links img {
     width: 40px;
     height: 40px;
-    object-fit: cover;
+    /*object-fit: cover;*/
 }
+
+#contact {
+    background-color: #f5f5f5;
+    margin: 20px; /* Reduce the margin for consistency with other sections */
+    padding: 20px; /* Increase padding for spacing */
+    text-align: center;
+}
+
+.contact-content {
+    border-radius: 10px;
+    background-color: #fff; /* Add a background color for the contact content */
+    padding: 20px; /* Add padding for spacing within the content */
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 10px;
+    transition: transform 0.2s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2); /* Increase the size on hover */
+}
+
+.social-icons img {
+    width: 50px; /* Adjust the initial size as needed */
+    height: 50px; /* Adjust the initial size as needed */
+}
+
 
 footer {
     background-color:#78c4e7;
@@ -176,5 +231,5 @@ footer {
 }
 
 #header {
-    animation: fadeIn 1.5s ease-in;
+    animation: fadeIn 1s ease-in;
 }
