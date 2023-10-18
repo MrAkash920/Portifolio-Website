@@ -20,7 +20,9 @@ body {
     text-align: center;
     padding: 20px 0;
     z-index: 1000;
+    animation: fadeIn 1s ease-in;
 }
+
 
 header h1 {
     font-size: 3em;
@@ -46,6 +48,34 @@ nav a {
     color: #fff;
 }
 
+#popup-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+
+#popup {
+    background-color: #fff;
+    padding: 40px; /* Increase the padding to make it larger */
+    border-radius: 10px;
+    text-align: center;
+    animation: hide-popup 0.2s ease-in-out; /* Add hiding animation */
+}
+
+
+
+#popup-container.show-popup #popup {
+    animation: pop-up 0.2s ease-in-out;
+}
+
+
 section {
     background-color: #fff;
     margin: 20px;
@@ -69,9 +99,19 @@ section {
     padding: 62px; /* You can adjust the padding as needed */
 }
 
+.about-content h2 {
+    margin-bottom: 10px; /* Add space after each heading */
+}
+
 .about-content p {
     font-size: larger;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 10px
+}
+.about-content ul{
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 10px
 }
 
 
@@ -229,7 +269,17 @@ footer {
         opacity: 1;
     }
 }
-
-#header {
-    animation: fadeIn 1s ease-in;
+@keyframes pop-up {
+    0% { transform: scale(0.5); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
 }
+
+
+@keyframes hide-popup {
+    0% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(0.5); opacity: 0; }
+}
+
+
+
+

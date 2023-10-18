@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Akash Singh - Portfolio</title>
 </head>
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
     <header id="header">
         <h1>Akash Singh</h1>
         <nav>
@@ -21,12 +20,36 @@
         </nav>
     </header>
 
+    <div id="popup-container">
+        <div id="popup">
+            <p>Welcome to my Portfolio 😊</p>
+        </div>
+    </div>
+
     <section id="about">
         <div class="about-content">
-            <h2>About Akash Singh </h2>
+            <h2>About Me </h2>
             <p>
-                I am Akash Singh, a highly motivated and results-driven Computer Science Engineering graduate with a strong foundation in programming, data analysis, effective communication, and collaborative teamwork. Known for my exceptional leadership and initiative, I am eager to contribute my technical skills, database expertise, and project management abilities to a reputed organization. My goal is to support organizational growth while fostering teamwork and staying updated with emerging trends in the dynamic IT sector.
+                Hello, I'm Akash Singh, a final year student pursuing a Bachelor's degree in Computer Science and Engineering at Chandigarh University. I am passionate about the world of data and aspire to be a skilled Data Analyst, with a long-term goal of becoming a Machine Learning Developer. My journey through the world of data has been a fascinating one, and I have equipped myself with a diverse skill set to excel in this field.</p>
             </p>
+
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming Languages: I am proficient in Python and R, two of the most powerful languages for data analysis and machine learning.</li>
+                <li>Data Tools: My toolbox includes Excel, PowerBI, and Tableau for data manipulation and visualization, ensuring that I can extract meaningful insights from complex datasets.</li>
+                <li>Database Management: With a solid foundation in SQL, I can efficiently manage, query, and extract valuable data from databases.</li>
+                <li>Data Analytics: I am well-versed in data analysis techniques, allowing me to uncover patterns and trends in data that drive informed decision-making.</li>
+                <li>Data Visualization: I have a keen eye for design and storytelling, using data visualization to communicate findings effectively.</li>
+            </ul>
+
+            <h2>Portfolio</h2>
+            <p>You can explore some of my data analysis and visualization projects on my portfolio site. These projects showcase my practical experience in turning raw data into actionable insights. I have a strong track record of transforming data into compelling visual narratives that drive understanding and decision-making.
+
+                My passion for data extends beyond the classroom, and I'm excited to bring this enthusiasm to real-world projects and challenges. As a soon-to-be graduate in Computer Science and Engineering, I am eager to leverage my skills and knowledge to contribute to the world of data analysis and machine learning.
+                
+                Thank you for visiting my portfolio. If you have any inquiries, project opportunities, or collaboration ideas, please don't hesitate to reach out. Let's embark on a data-driven journey together!
+            </p>
+
         </div>
     </section>
 
@@ -172,5 +195,29 @@
     <footer>
         <p>&copy; 2023 Akash Singh</p>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const popupContainer = document.getElementById("popup-container");
+            popupContainer.style.display = "block";
+            popupContainer.classList.add("show-popup");
+    
+            // Close the pop-up after 5 seconds
+            setTimeout(function () {
+                popupContainer.classList.remove("show-popup");
+                setTimeout(function () {
+                    popupContainer.style.display = "none";
+                }, 500); // Adjust this value to match your animation duration
+            }, 5000); // Adjust this value to set the duration of the pop-up
+    
+            // Close the pop-up when clicked
+            popupContainer.addEventListener("click", function () {
+                popupContainer.classList.remove("show-popup");
+                setTimeout(function () {
+                    popupContainer.style.display = "none";
+                }, 500); // Adjust this value to match your animation duration
+            });
+        });
+    </script>
+    
 </body>
 </html>
