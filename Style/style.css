@@ -6,7 +6,7 @@ body, h1, h2, p, ul, li {
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f6f6f6;
+    background-color: #3964da;
     color: #000000;
 }
 
@@ -15,7 +15,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #78c4e7;
+    background-color: #065478;
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -62,7 +62,7 @@ nav a {
 
 
 #popup {
-    background-color: #fff;
+    background-color: #4c80ef;
     padding: 40px; /* Increase the padding to make it larger */
     border-radius: 10px;
     text-align: center;
@@ -77,14 +77,15 @@ nav a {
 
 
 section {
-    background-color: #fff;
+    background-color: #3964da;
     margin: 20px;
     padding: 20px;
 }
 
 .about-content {
     background-size: cover;
-    background-color: rgb(127, 232, 255);
+    background-color: rgb(0, 52, 97);
+    color: #f5f5f5;
     padding: 90px;
     border-radius: 10px;
     margin-top: 90px;
@@ -117,12 +118,17 @@ section {
 
 /* Skills Section */
 #skills {
-    background-color: #fff;
+    background-color: #3964da;
+    color: #000000;
     margin: 20px;
     padding: 20px;
 }
 
 .skills-list {
+    background-color: rgb(0, 52, 97);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
     list-style: none;
     display: flex;
     justify-content: space-around;
@@ -140,6 +146,7 @@ section {
 }
 
 .skills-list p {
+    color: #fff;
     margin-top: 10px;
     font-weight: bold;
 }
@@ -148,13 +155,13 @@ section {
 
 /* Projects Section */
 #projects {
-    background-color: #fff;
+    background-color: #3964da;
     margin: 20px;
     padding: 20px;
 }
 
 .project {
-    background-color: #f5f5f5;
+    background-color:  rgb(0, 52, 97);
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -162,6 +169,7 @@ section {
 }
 
 .project h3 {
+    color: #fff;
     font-size: 1.5em;
     margin-bottom: 10px;
 }
@@ -175,11 +183,13 @@ section {
 }
 
 .project p {
+    color: #fff;
     margin: 20px 0; 
     font-size: larger;
 }
 
 .technologies-used {
+    color: #fff;
     font-weight: bold;
     font-size: larger;
 }
@@ -206,7 +216,7 @@ section {
 }
 
 #contact {
-    background-color: #f5f5f5;
+    background-color: #3964da;
     margin: 20px; /* Reduce the margin for consistency with other sections */
     padding: 20px; /* Increase padding for spacing */
     text-align: center;
@@ -214,7 +224,7 @@ section {
 
 .contact-content {
     border-radius: 10px;
-    background-color: #fff; /* Add a background color for the contact content */
+    background-color:  rgb(0, 52, 97); /* Add a background color for the contact content */
     padding: 20px; /* Add padding for spacing within the content */
     margin-bottom: 20px;
     display: flex;
@@ -238,9 +248,43 @@ section {
     height: 50px; /* Adjust the initial size as needed */
 }
 
+#resume {
+    background-color: #3964da;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+#resume a.download-button {
+    border-radius: 10px;
+    background-color: #fff; /* Add a background color for the contact content */ 
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #07384f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    margin-top: 10px;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+#resume a.download-button:hover {
+    transform: scale(1.1); /* Add a zoom-out effect on hover */
+}
+
+#resume a.download-button:focus {
+    outline: none;
+}
+
+
+
 
 footer {
-    background-color:#78c4e7;
+    background-color: #065478;
     color: #fff;
     text-align: center;
     padding: 10px 0;
